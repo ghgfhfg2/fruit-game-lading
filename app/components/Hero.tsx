@@ -4,13 +4,12 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/sy-groupware-sample.appspot.com/o/publicImages%2Fhero-bg.jpg?alt=media&token=aaf2aacd-73fb-4d05-8b68-3600059445b2"
-          alt="Hero background"
-          className="object-cover"
-        />
-      </div>
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://firebasestorage.googleapis.com/v0/b/sy-groupware-sample.appspot.com/o/publicImages%2Fhero-bg.jpg?alt=media&token=aaf2aacd-73fb-4d05-8b68-3600059445b2')`,
+        }}
+      />
 
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-r from-orange-400/30 to-pink-400/30" />
