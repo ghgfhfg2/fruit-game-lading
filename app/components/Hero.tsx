@@ -1,20 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import imageLoader from "../../imageLoader.js";
-
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
-        <Image
-          loader={imageLoader}
-          src="/images/hero-bg.jpg"
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/sy-groupware-sample.appspot.com/o/publicImages%2Fhero-bg.jpg?alt=media&token=aaf2aacd-73fb-4d05-8b68-3600059445b2"
           alt="Hero background"
-          fill
           className="object-cover"
-          priority
         />
       </div>
 
