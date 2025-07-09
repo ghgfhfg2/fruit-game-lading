@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import imageLoader from "../../imageLoader.js";
 
 export default function Hero() {
   return (
@@ -8,6 +9,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
+          loader={imageLoader}
           src="/images/hero-bg.jpg"
           alt="Hero background"
           fill
