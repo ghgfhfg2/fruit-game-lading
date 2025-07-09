@@ -1,16 +1,18 @@
 "use client";
 
-const heroBgUrl = "/images/hero-bg.jpg";
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${heroBgUrl})`,
-        }}
-      />
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src="/images/hero-bg.jpg"
+          alt="Hero background"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-r from-orange-400/30 to-pink-400/30" />
