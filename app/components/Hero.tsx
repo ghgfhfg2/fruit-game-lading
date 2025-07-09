@@ -7,10 +7,12 @@ export default function Hero() {
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
-        <img
+        <Image
           src="/images/hero-bg.jpg"
           alt="Hero background"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
       </div>
 
