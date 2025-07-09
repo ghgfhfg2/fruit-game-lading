@@ -1,6 +1,6 @@
 "use client";
 
-import bgImage from "@/public/images/hero-bg.jpg";
+const heroBgUrl = "/images/hero-bg.jpg";
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
@@ -8,7 +8,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${bgImage.src})`,
+          backgroundImage: `url(${heroBgUrl})`,
         }}
       />
 
