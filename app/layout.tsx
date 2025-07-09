@@ -56,7 +56,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#f97316" />
         <meta
           name="google-site-verification"
-          content="google-site-verification=9VxNv6UPgVSxRVMYKxPZwdq29fHtjRjkZ7IAbUcwCoU"
+          content="google-site-verification=9VxNv6UPgVSxRVMYKxPZwdq29fHtjRjkZ7IAbUcw"
         />
       </head>
       <body
