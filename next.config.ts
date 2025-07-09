@@ -5,7 +5,12 @@ const nextConfig: NextConfig = {
   images: {
     loader: "custom",
     loaderFile: "./imageLoader.js",
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "fruit-game-lading.sooyadev.com",
+      },
+    ],
   },
   trailingSlash: true,
 };
