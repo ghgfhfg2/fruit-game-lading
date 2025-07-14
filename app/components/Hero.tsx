@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
@@ -42,10 +44,10 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              onClick={() => {
-                window.open("https://sy-web-game.web.app", "_blank");
-              }}
+            <Link
+              href="https://sy-web-game.web.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer"
             >
               <div className="flex items-center justify-center gap-2">
@@ -54,7 +56,7 @@ export default function Hero() {
                 </div>
                 지금 무료로 플레이하기
               </div>
-            </button>
+            </Link>
           </div>
 
           {/* Quick Stats */}
